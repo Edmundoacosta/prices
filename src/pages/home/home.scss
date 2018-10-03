@@ -1,3 +1,79 @@
 page-home {
+	.center {
+		text-align: center;
+		padding-top: 50px;
+		ion-col {
+			font-size: 5rem;
+			padding: 5px 0;
+		}
 
+		.icon {
+			font-size: 5rem;
+			padding: 0 15px;
+		}
+	}
+
+	.header {
+		justify-content: space-between;
+		.bell {
+			color: #FFB813;
+			padding-right: 5px;
+		}
+
+		.italic {
+			font-style: italic;
+		}
+	}
+
+	.buyandsell, .bank {
+		padding: 10px 0;
+		font-size: 2rem;
+
+		.line {
+			border-bottom: 1px solid #FFF;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.small {
+			font-size: 1.4rem;
+		}
+	}
+
+	.bank {
+		padding-top: 80px;
+
+		ion-row:nth-child(2) {
+			border: 1px solid #fff;
+		}
+	}
+
+	.icon {
+		font-size: 2rem;
+	}
+
+	.column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.5rem;
+
+		span:first-of-type {
+			font-weight: bold;
+		}
+	}
+
+	ion-col.col {
+		align-items: center;
+		display: flex;
+		padding: 0;
+		justify-content: center;
+	}
+
+	.footer div{
+		font-weight: lighter;
+		font-size: 1.2rem;
+	}
 }

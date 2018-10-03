@@ -6,7 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+	public date = new Date();
   constructor(public navCtrl: NavController) {
 
   }

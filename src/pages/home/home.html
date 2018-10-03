@@ -1,14 +1,64 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="background">
+  <ion-row class="header">
+    <div><ion-icon class="icon" name="information-circle"></ion-icon></div>
+    <div class="italic"><ion-icon class="icon bell" name="notifications"></ion-icon>USDPEN</div>
+  </ion-row>
+	<ion-row class="center" justify-content-center text-center>
+	  <ion-col no-padding col-12 align-self-center>3.295<ion-icon name="arrow-round-up"></ion-icon><div class="column"><span>0.015</span><span>0.45%</span></div></ion-col>
+  </ion-row>
+  <ion-grid>
+    <div class="buyandsell">
+      <ion-row class="line">
+        <ion-col class="center" col-4>
+          MIN
+        </ion-col>
+        <ion-col class="center small" col-4>
+          24h
+        </ion-col>
+        <ion-col class="center" col-4>
+          MAX
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="center bold" col-4>
+          3.280
+        </ion-col>
+        <ion-col col-4>
+        </ion-col>
+        <ion-col class="center bold" col-4>
+          3.295
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="bank">
+      <ion-row>
+        <ion-col class="center" col-12>
+          BANCARIO
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="center" col-6>
+          COMPRA
+        </ion-col>
+        <ion-col class="center" col-6>
+          VENTA
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="center bold" col-6>
+          3.280
+        </ion-col>
+        <ion-col class="center bold" col-6>
+          3.310
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+  <ion-footer align="center" no-border>
+    <ion-toolbar color="grey">
+      <ion-title class="footer">
+        Actualizado {{date | date : 'shortTime'}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>
